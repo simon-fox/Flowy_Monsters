@@ -16,5 +16,11 @@
 
 - Abstract ragdoll spawning properly
 	- create all joints with local positions relative to local 0,0
-		- ie: 
+		- ie:  this.body.GetLocalCenter()?
+		- or use pos.x and pos.y
+			figure out if this refers to TOP LEFT or CENTER
 	- spawn in bodies with similar logic
+	- Allow for spawning in any number of body elements 
+		- ie: 6 torso bodies
+		- or arms with 4 limbSegments	
+		
