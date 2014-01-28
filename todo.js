@@ -6,13 +6,20 @@
 
 - Start by pinning both feet
 
-- On grabbing a limb, when released, pin it 
-	- if grabbing a pinned limb, unpin it
+//- On grabbing a limb, when released, pin it 
+	//- if grabbing a pinned limb, unpin it
+	- give each limb body a unique ID so that similar limb segments do
+	  not count as duplicates
 
-- which bodies can be dragged?
-	- limbSegments
-	- Both chest pieces?
-	- Head?
+- spawn objectives
+	- sensor entities which require a specific limb ID to be dragged into them
+	- dont need to be sensors specifically, could just be non-colliding static entities
+
+
+- which bodies can be dragged & pinned?
+	- limbSegments only
+	- other body parts can currently be dragged but not pinned
+	
 
 - Abstract ragdoll spawning properly
 	- create all joints with local positions relative to local 0,0
@@ -23,4 +30,4 @@
 	- Allow for spawning in any number of body elements 
 		- ie: 6 torso bodies
 		- or arms with 4 limbSegments	
-		
+
