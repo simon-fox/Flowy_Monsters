@@ -15,6 +15,7 @@
 	- sensor entities which require a specific limb ID to be dragged into them
 	- dont need to be sensors specifically, could just be non-colliding static entities
 
+- do selective collideConnected for joints - upper arms collide, others dont
 
 - which bodies can be dragged & pinned?
 	- limbSegments only
